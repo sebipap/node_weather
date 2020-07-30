@@ -1,7 +1,3 @@
-console.log('esto esta corriendo desde chrome')
-
-
-
 search = () =>{
     document.getElementById('searchImg').src = 'https://canvas-rsc.ilumno.com/testilumno/prod/js/repositorio/js/components/img/loading.gif'
     let sTerm = document.getElementById('search').value
