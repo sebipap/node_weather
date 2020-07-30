@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png">
+    <script src="js/app.js"></script>
+    <title>Bienvenido</title>
+</head>
+{{>header}}
+<body>
+    
+    <input type="text" id="search" placeholder="Search" autocomplete="off">
+    <button id="searchButton" onclick="search()"><img id="searchImg" src='https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png' ></button>
+    
+
+
+    <div id="forecast">
+        <div id="left">
+            <h1 id="fetch_location">Buenos Aires</h1>
+            <h2 id="fetch_forecast">Rainy</h2>
+        </div>
+        <div id="right">
+           <h1 id="fetch_temperature">21°</h1>  
+        </div>
+    </div>
+
+  
+  
+
+</body>
+{{>footer}}
+</html>
