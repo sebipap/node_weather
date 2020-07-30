@@ -1,7 +1,7 @@
 search = () =>{
     document.getElementById('searchImg').src = 'https://canvas-rsc.ilumno.com/testilumno/prod/js/repositorio/js/components/img/loading.gif'
     let sTerm = document.getElementById('search').value
-    let url = 'http://localhost:3000/weather?city=' + sTerm
+    let url = '/weather?city=' + sTerm
     console.log(sTerm)
    
 
