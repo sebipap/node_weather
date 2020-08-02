@@ -7,9 +7,12 @@ const getWeather = ({lat, lon}, callback) => {
     url = getWeatherURL(lat,lon)
     axios.get(url)
     .then(({data}) =>{
+       
         callback(undefined, {
             desc: data.weather[0].description,
-            temp: data.main.temp
+            temp: data.main.temp,
+            temp_max: data.main.temp_max,
+            temp_min: data.main.temp_min
         })
     })
     .catch(()=>{callback("Weather error" , undefined)})

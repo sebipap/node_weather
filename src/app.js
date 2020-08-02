@@ -70,7 +70,10 @@ app.get('/weather', (req, res) => {
                         res.send({
                             location: data.location,
                             forecast: Wdata.desc,
-                            temperature: Wdata.temp
+                            temperature: Wdata.temp,
+                            temp_max : Wdata.temp_max,
+                            temp_min : Wdata.temp_min,
+
                         })
          
                         
